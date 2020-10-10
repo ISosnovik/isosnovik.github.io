@@ -1,44 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>¯\_(ツ)_/¯</title>
-    <meta name="viewport" content="initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ivan Sosnovik</title>
+    <meta name="author" content="Ivan Sosnovik">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<style>
+<body>
+    <div class="container">
+        <!-- BIO -->
+        <div class="row bio">
+            <div class="col-md-9 order-2 order-md-1">
+                <h1 style="text-align:center;">Ivan Sosnovik</h1>
+                <p>
+                    I am a PhD student at Delta Lab at the University of Amsterdam, supervised by
+                    <a href="https://staff.fnwi.uva.nl/a.w.m.smeulders/">Arnold Smeulders</a>.
+                    My research mainly focuses on developing networks that are equivariant
+                    to principle transformations of the data.
+                </p>
+                <p>
+                    I received my MSc from Phystech and Skoltech, where I worked on the connection of neural
+                    networks and topology optimization under the supervision of
+                    <a href="https://oseledets.github.io/">Ivan Oseledets</a>.
+                    I did my bachelor's at Phystech, where I studied experimental low-temperature
+                    physics.
+                </p>
+                <p style="text-align:center">
+                    <a href="mailto:i.sosnovik@uva.nl">Email</a> |
+                    <a href="src/pdfs/cv.pdf">CV</a> |
+                    <a href="https://scholar.google.com/citations?user=brUsNccAAAAJ">Google Scholar</a> |
+                    <a href="https://github.com/ISosnovik">GitHub</a> |
+                    <a href="https://twitter.com/isosnovik">Twitter</a>
+                </p>
+            </div>
+            <div class="col-md-3 order-1 order-md-2 avatar">
+                <img class="img-responsive" src="src/images/profile_pic.jpg" alt="avatar">
+            </div>
+        </div>
 
-    html * {
-        background-color: RGB(241, 241, 241);
-        font-size: 150;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-    }
+        <!-- PUBLICATIONS -->
+        <h2>Publications</h2>
 
-    #header {
-        position: relative;
-        top: 50px;
-    }
+        <div class="row publications">
+            <div class="col-md-5">
+                <img class="img-responsive" src="src/images/siamse.png" alt="" />
+            </div>
+            <div class="col-md-7">
+                <p class="title">Scale Equivariance Improves Siamese Tracking</p>
+                <p class="authors">Ivan Sosnovik*, Artem Moskalev*, Arnold Smeulders
+                </p>
+                <p class="conf">Under submission</p>
+                <p class="description">
+                    In this paper, we develop the theory for scale-equivariant Siamese trackers.
+                    We also provide a simple recipe for how to make a wide range of existing trackers
+                    scale-equivariant to capture the natural variations of the target a priori.
+                </p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/2007.09115">Paper</a> |
+                    <a href="https://github.com/isosnovik/SiamSE">Code</a>
+                </div>
+            </div>
+        </div>
 
-    #image {
-        width: 40%;
-        max-width: 250px;
-    }
+        <hr>
 
-</style>
+        <div class="row publications">
+            <div class="col-md-5">
+                <img class="img-responsive" src="src/images/sesn.png" alt="" />
+            </div>
+            <div class="col-md-7">
+                <p class="title">Scale-Equivariant Steerable Networks</p>
+                <p class="authors">Ivan Sosnovik, Michał Szmaja, Arnold Smeulders
+                </p>
+                <p class="conf">ICLR, 2020</p>
+                <p class="description">
+                    We introduce the general theory for building scale-equivariant convolutional networks with
+                    steerable filters. We develop scale-convolution and generalize other common blocks to be
+                    scale-equivariant.
+                </p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/1910.11093">arXiv</a> |
+                    <a href="https://openreview.net/forum?id=HJgpugrKPS">OpenReview</a> |
+                    <a href="https://github.com/isosnovik/sesn">Code</a> |
+                    <a href="https://iclr.cc/virtual_2020/poster_HJgpugrKPS.html">Poster and Video</a>
+                </div>
+            </div>
+        </div>
 
-</head>
-<body link="#A0A0A0" vlink="#707070" alink="#AA0000">
+        <hr>
 
-<div id="header" align="center">
-    <img id="image" src="./face.png">
-    <br>
-    <br>
-    <div align="center">
-        <a href="https://github.com/ISosnovik">GitHub</a>
+        <div class="row publications">
+            <div class="col-md-5">
+                <img class="img-responsive" src="src/images/scnf.png" alt="" />
+            </div>
+            <div class="col-md-7">
+                <p class="title">Semi-Conditional Normalizing Flows for Semi-Supervised Learning</p>
+                <p class="authors">Andrei Atanov, Alexandra Volokhova, Arsenii Ashukha, Ivan Sosnovik, Dmitry Vetrov</p>
+                <p class="conf">ICML INNF, 2019</p>
+                <p class="description">
+                    This paper proposes a semi-conditional normalizing flow model for semi-supervised learning. The
+                    model uses both labelled and unlabeled data to learn an explicit model of joint distribution over
+                    objects and labels.
+                </p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/1905.00505">Paper</a> |
+                    <a href="https://github.com/bayesgroup/semi-supervised-NFs">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row publications">
+            <div class="col-md-5">
+                <img class="img-responsive" src="src/images/nn4topopt.png" alt="" />
+            </div>
+            <div class="col-md-7">
+                <p class="title">Neural Networks for Topology Optimization</p>
+                <p class="authors">Ivan Sosnovik, Ivan Oseledets
+                </p>
+                <p class="conf">Russian Journal of Numerical Analysis and Mathematical Modelling 34 (4), 2019</p>
+                <p class="description">
+                    In this research, we propose a deep learning based approach for speeding up the topology
+                    optimization methods. We formulate the problem as image segmentation
+                    and leverage the power of deep learning to perform pixel-wise image labeling.
+                </p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/1709.09578">arXiv</a> |
+                    <a href="https://www.degruyter.com/view/journals/rnam/34/4/article-p215.xml">Journal</a> |
+                    <a href="https://github.com/ISosnovik/nn4topopt">Code</a> |
+                    <a href="https://github.com/ISosnovik/top">Dataset</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ETC -->
+        <h2 style="margin-top:40px;">Open Source Projects</h2>
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="https://github.com/ISosnovik/automark">AutoMark</a> —
+                    a lightweight tool for testing programming assignments written in Python. It was used a lot for
+                    automating assessment of homework assignments at "Applied Machine Learning" at the UvA.
+                </li>
+                <li>
+                    <a href="https://github.com/williamhunter/topy">ToPy</a> —
+                    a lightweight topology optimization framework for Python that can solve compliance (stiffness),
+                    mechanism synthesis and heat conduction problems in 2D and 3D.
+                </li>
+            </ul>
+        </div>
+
+        <h2>Teaching</h2>
+        <div class="row">
+            <ul>
+                <li>Applied Machine Learning, University of Amsterdam, 2017 – 2020</li>
+                <li>iOS Game Development, Skolkovo Institute of Science and Technology, 2016</li>
+            </ul>
+        </div>
+
+
+        <h2>Students</h2>
+        <div class="row">
+            <ul>
+                <li>Jonne Goedhart: Application of autoencoders to the analysis of Raman hyperspectral imagery</li>
+                <li>Daan Ferdinandusse: Transformation-equivariant models</li>
+                <li><a href="https://zardinality.github.io/">Gongze Cao</a>: On free-form normalizing flows</li>
+                <li>Michał Szmaja: Scale-equivariant convolutional neural networks</li>
+                <li><a href="https://www.janjetze.nl">Jan Jetze Beitler</a>: Orthogonal
+                    weight parametrization for dimensionality
+                    reduction in neural networks</li>
+            </ul>
+        </div>
+
+        <h2>Reviewing</h2>
+        <div class="row">
+            <ul>
+                <!-- <li>ICLR 2021</li>
+                <li>CVPR 2021</li>
+                <li>WACV 2021</li> -->
+                <li>Engineering Optimization</li>
+                <li>Computer Methods in Applied Mechanics and Engineering</li>
+                <li>CVPR 2018</li>
+            </ul>
+        </div>
+
+
     </div>
-</div>
-
-
 </body>
+
 </html>
